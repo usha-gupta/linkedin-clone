@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+  background-color: #f3f2ee;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.header-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 130px;
+}
+.child-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.menu-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding-top: 8px;
+}
+.selected-menu-icon {
+  border-bottom: 2px solid black;
+}
+.menu-icons:hover > .menu-img {
+  fill: black;
+}
+.menu-icons:hover > .menu-text {
+  color: black;
+}
+.menu-icons:hover > .menu-text > .menu-img {
+  fill: black;
+}
+
+.menu-img {
+  width: 24px;
+  height: 24px;
+  fill: #00000099;
+}
+.menu-text {
+  font-weight: 400;
+  color: #00000099;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.message {
+  color: #915907;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0px;
+}
+.message:hover {
+  text-decoration: underline;
+}
+
+.linkedin-icon {
+  height: 34px;
+  width: 34px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+.search-input {
+  background-color: transparent;
+  border: none;
+  margin: 8px 0px 8px 0px;
+  /* width: 280px; */
+  outline: none;
+}
+.search-box {
+  display: flex;
+  background-color: #eef3f8;
+  border-radius: 6px;
+  height: 34px;
+  align-items: center;
+  margin-top: 8px;
+  width: 280px;
+}
+
+.search-icon {
+  padding: 8px 8px 8px 16px;
+}
+
+.aap-icon-border {
+  border-left: 1px solid #00000014;
+}
+.add-message {
+  width: 100px;
+  margin: 8px 0px 8px 0px;
+}
