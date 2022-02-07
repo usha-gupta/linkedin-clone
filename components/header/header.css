@@ -2,42 +2,26 @@ body {
   margin: 0px;
   background-color: #f3f2ee;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
 }
+
 .header-container {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 130px;
 }
+
 .child-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
 }
+
 .profile-icon {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-}
-.menu-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80px;
-  padding-top: 8px;
-}
-.selected-menu-icon {
-  border-bottom: 2px solid black;
-}
-.menu-icons:hover > .menu-img {
-  fill: black;
-}
-.menu-icons:hover > .menu-text {
-  color: black;
-}
-.menu-icons:hover > .menu-text > .menu-img {
-  fill: black;
 }
 
 .menu-img {
@@ -52,14 +36,53 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0px;
 }
+
+.menu-icons:hover .menu-img {
+  fill: black;
+}
+.menu-icons:hover > .menu-text {
+  color: black;
+}
+
+.menu-icons:hover > .menu-text-arrow > .menu-text {
+  color: black;
+}
+.menu-icons:hover > .menu-text-arrow .down-arrow {
+  fill: black;
+}
+
+.menu-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  position: relative;
+}
+
+.selected-menu-icon {
+  border-bottom: 2px solid black;
+}
+
+.selected-menu-icon .menu-img {
+  fill: black;
+}
+
+.selected-menu-icon > .menu-text {
+  color: black;
+}
+
 .message {
   color: #915907;
   font-weight: 400;
   font-size: 0.75rem;
   text-align: center;
-  margin: 0px;
+  width: 100px;
+  cursor: pointer;
 }
+
 .message:hover {
   text-decoration: underline;
 }
@@ -68,22 +91,21 @@ body {
   height: 34px;
   width: 34px;
   margin-right: 8px;
-  margin-top: 8px;
 }
 .search-input {
   background-color: transparent;
   border: none;
-  margin: 8px 0px 8px 0px;
-  /* width: 280px; */
   outline: none;
+  width: inherit;
+  padding-right: 8px;
 }
+
 .search-box {
   display: flex;
   background-color: #eef3f8;
   border-radius: 6px;
   height: 34px;
   align-items: center;
-  margin-top: 8px;
   width: 280px;
 }
 
@@ -91,10 +113,34 @@ body {
   padding: 8px 8px 8px 16px;
 }
 
-.aap-icon-border {
+.border-right-black {
   border-left: 1px solid #00000014;
 }
-.add-message {
-  width: 100px;
-  margin: 8px 0px 8px 0px;
+
+.menu-text-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow {
+  width: 16px;
+  height: 16px;
+  fill: #00000099;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: 21px;
+  border-radius: 7px;
+  background: #cc1016;
+  height: 16px;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  padding: 1px 4px;
+  font-weight: 400;
+  min-width: 16px;
+  box-sizing: border-box;
 }

@@ -27,29 +27,26 @@
           </g>
         </svg>
         <div class="search-box">
-          <div class="search-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              data-supported-dps="16x16"
-              fill="currentColor"
-              class="mercado-match"
-              width="16"
-              height="16"
-              focusable="false"
-            >
-              <path
-                d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"
-              ></path>
-            </svg>
-          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            data-supported-dps="16x16"
+            fill="currentColor"
+            class="search-icon"
+            width="16"
+            height="16"
+            focusable="false"
+          >
+            <path
+              d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"
+            ></path>
+          </svg>
           <input class="search-input" type="text" placeholder="Search" />
         </div>
       </div>
 
       <div class="child-container">
         <div class="menu-icons selected-menu-icon">
-          <!-- <img class="menu-img" src="home-icon.svg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -59,10 +56,9 @@
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
           </svg>
-          <span class="menu-text">Home</span>
+          <p class="menu-text">Home</p>
         </div>
         <div class="menu-icons">
-          <!-- <img class="menu-img"src="network-icon.svg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -73,10 +69,10 @@
               d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
             />
           </svg>
-          <span class="menu-text">My Network</span>
+          <p class="badge">4</p>
+          <p class="menu-text">My Network</p>
         </div>
         <div class="menu-icons">
-          <!-- <img class="menu-img" src="jon-icon.svg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -87,10 +83,9 @@
               d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"
             />
           </svg>
-          <span class="menu-text">Jobs</span>
+          <p class="menu-text">Jobs</p>
         </div>
         <div class="menu-icons">
-          <!-- <img class="menu-img"src="messaging-icon.svg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -101,10 +96,9 @@
               d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"
             />
           </svg>
-          <span class="menu-text">Messaging</span>
+          <p class="menu-text">Messaging</p>
         </div>
         <div class="menu-icons">
-          <!-- <img class="menu-img"src="notification-icon.svg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -114,23 +108,23 @@
               d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
             />
           </svg>
-          <span class="menu-text">Notifications</span>
+          <p class="menu-text">Notifications</p>
         </div>
         <div class="menu-icons">
           <img class="profile-icon" src="../../assets/images/vishnu.jpg" />
-          <span class="menu-text"
-            >Me
+          <div class="menu-text-arrow">
+            <p class="menu-text">Me</p>
             <svg
-              class="menu-img"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
+              class="down-arrow"
             >
               <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M7 10l5 5 5-5H7z" />
+              <path d="M3 5l5 5 5-5H7z" />
             </svg>
-          </span>
+          </div>
         </div>
-        <div class="menu-icons aap-icon-border">
+        <div class="menu-icons border-right-black">
           <svg
             class="menu-img"
             xmlns="http://www.w3.org/2000/svg"
@@ -141,21 +135,19 @@
               d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
             />
           </svg>
-          <span class="menu-text"
-            >Work
+          <div class="menu-text-arrow">
+            <p class="menu-text">Work</p>
             <svg
-              class="menu-img"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
+              class="down-arrow"
             >
               <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M7 10l5 5 5-5H7z" />
+              <path d="M3 5l5 5 5-5H7z" />
             </svg>
-          </span>
+          </div>
         </div>
-        <div class="add-message">
-          <a><p class="message">Try Premium for free</p></a>
-        </div>
+        <a class="message"><p>Try Premium for free</p></a>
       </div>
     </div>
   </body>
